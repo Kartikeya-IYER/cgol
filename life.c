@@ -61,8 +61,7 @@ void print_grid(uint64_t num, uint8_t cols) {
         if(num & mask) {
             // Live cell
             printf(" X "); 
-        }
-        else {
+        } else {
             // blargh i am ded
             printf(" . "); 
         }

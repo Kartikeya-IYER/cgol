@@ -112,13 +112,11 @@ void perform_life_TESTS(uint8_t rows, uint8_t cols, uint64_t lg1, uint64_t lg2) 
             DEBUG_PRINTF("This matches BEACON_8x8 (%"PRIu64") :-)\n", ((uint64_t)(BEACON_8x8)));
             DEBUG_PRINTF("%s", "Printing Beacon starting grid...\n");
             print_grid(beacon_number, cols);
-        }
-        else {
+        } else {
             DEBUG_PRINTF("ERROR CONVERTING: %"PRIu64" DOES NOT match BEACON_8x8 (%"PRIu64") :-(\n",
                     beacon_number, BEACON_8x8);
         }
-    }
-    else {
+    } else {
         DEBUG_PRINTF("%s", "ERROR: FAILED converting beacon 8x8 grid array into number :-(\n");
     }
 

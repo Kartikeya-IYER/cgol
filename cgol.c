@@ -84,17 +84,13 @@ bool process_commandline_args(int nargs, char *args[],
     // Now come some ugly if-elif blocks because we can't switch strings in C
     if( strncmp(patternstr, XSTR(RANDOM), STR_MAXLEN) == 0 ) {
         *out_pattern = RANDOM;
-    }
-    else if( strncmp(patternstr, XSTR(BEACON), STR_MAXLEN) == 0 ) {
+    } else if( strncmp(patternstr, XSTR(BEACON), STR_MAXLEN) == 0 ) {
         *out_pattern = BEACON;
-    }
-    else if( strncmp(patternstr, XSTR(BLINKER), STR_MAXLEN) == 0 ) {
+    } else if( strncmp(patternstr, XSTR(BLINKER), STR_MAXLEN) == 0 ) {
         *out_pattern = BLINKER;
-    }
-    else if( strncmp(patternstr, XSTR(TOAD), STR_MAXLEN) == 0 ) {
+    } else if( strncmp(patternstr, XSTR(TOAD), STR_MAXLEN) == 0 ) {
         *out_pattern = TOAD;
-    }
-    else {
+    } else {
         snprintf(out_errmsg, errmsg_maxlen,
                 "'%s' is not a valid starting pattern", args[1]);
         return false;
