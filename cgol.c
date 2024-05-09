@@ -128,6 +128,7 @@ int main(int argc, char *argv[]) {
     if(num_cells > CGOL_WORD_BITS) {
         fprintf(stderr, "ERROR: rows x cols = %"PRIu16" which exceeds %"PRIu64", CANNOT CONTINUE,\n",
                 num_cells, CGOL_WORD_BITS);
+        return 1;
     }
 
     // If we have a pattern string arg, print it exactly as we received it.
