@@ -21,7 +21,8 @@ what such an implementation might look like...
 
 Code, building, and running
 ----------------------------------
-Indentation is the usual FOSS project standard, with tabstop=4 and tabs expanded.
+Indent style used is 1TBS, with tabs in the common FOSS project setup of
+tabstop=4, shiftwidth=4, and with tabs expanded to spaces.
 
 Build mechanisms for Linux as well as Windows are included.
 
