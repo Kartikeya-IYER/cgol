@@ -3,8 +3,10 @@ Conway's Game of Life in C99 using a bitfield
 
 This is a C99 implementation of Conway's Game of Life which uses a bitfield
 of 64 bits to encode the game board in a 64-bit unsigned integer instead of
-the usual implementation of a struct or integer array. The game grid is a 
-toroidal grid.
+the usual implementation of a struct or integer array.
+
+The game grid is an 8x8 toroidal grid which wraps around when its boundaries
+are exceeded.
 
 Using a bitfield not only saves memory, but - on a 64-bit system - also enables
 using a memory register to store the 64-bit number representing the game board,
